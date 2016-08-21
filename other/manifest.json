@@ -1,0 +1,14 @@
+{
+  "name": "njProject",
+  "short_name": "njProject",
+  "icons": [
+      {
+          "src": "apple-touch-icon.png",
+          "sizes": "180x180",
+          "type": "image/png"
+      }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "any"
+}

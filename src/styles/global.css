@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Default settings
+   ========================================================================== */
+
+html, input, select, textarea, button {
+  font:14px/1.428 Arial, "Geneva CY", sans-serif;
+  color:#222;
+}
+html,body {
+  height: 100%;
+  /* background-color: #000; */
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #005580;
+  text-decoration: underline;
+}
+a:visited {}
+a:link {} 
+
+
+::selection {
+  /* text-shadow: none; */
+}
+
+
+
+
+hr {
+  border-color: #ccc;
+}
+
+
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
+#wrapper {
+  min-height: 100%;
+  /* padding-top: 100px; */
+  position: relative;
+  box-sizing: border-box;
+}
+
+#body {
+  
+}
+
+
+.icon {
+  display: inline-block;
+  width:25px;
+  height:25px;
+  transition: fill 250ms;
+}
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+

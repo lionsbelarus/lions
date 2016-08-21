@@ -1,0 +1,29 @@
+/* import here all vendor styles */
+/* @import 'vendor\jquery.bxslider.css'; */
+/* @import 'vendor\lightbox.css'; */
+
+/* import here all default/reset styles */
+@import 'normalize-css\normalize.css';
+@import 'common\_custom_normalize.css';
+@import 'common\_variables.css';
+
+/* import project specific css */
+@import 'common\buttons.css';
+@import 'common\forms.css';
+@import 'common\plugins.css';/*in plugins we write our custom styles for vendor plugins*/
+
+/* import global site styles, common for all pages */
+@import 'global.css';
+
+
+/* import all css from modules here */
+@import 'modules\header.css';
+@import 'modules\footer.css';
+@import 'modules\banner.css';
+/* @import 'modules\index.css'; */
+
+
+
+
+/* import styles from backend developers */
+@import 'backend.css';

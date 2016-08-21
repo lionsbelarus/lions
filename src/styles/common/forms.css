@@ -1,0 +1,37 @@
+/*default styles*/
+.input {
+  box-sizing: border-box;
+}
+
+.input:hover, .input:focus {
+
+}
+.input[disabled], .input:disabled {
+
+}
+.input[readonly] {
+
+}
+.input::placeholder {
+  
+}
+
+textarea {
+  padding:4px;
+  box-sizing: border-box
+}
+
+select {
+  box-sizing: border-box;
+}
+/*from sanitize*/
+/*select{-moz-appearance:none;-webkit-appearance:none}
+select::-ms-expand{display:none}
+select::-ms-value{color:currentColor}*/
+
+.valid {
+    
+}
+.invalid {
+    
+}
