@@ -12,6 +12,7 @@
 
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
 <link rel="stylesheet" href="css/vendor.css" />
 <link rel="stylesheet" href="css/styles.css" />
   <title></title>
@@ -22,77 +23,35 @@
 <header class="header"> 
   <div class="inner clearfix">
     <div class="header__info">
-      <!-- <a href="#!" class="btn btn--black vam">Пробное занятие</a>
-
-      <a class="btn header__tel" href="tel:+375445157324">+375 44 515-73-24</a>
-
-      <ul class="social">
-        <li class="social__item">
-            <a href="#!" class="btn social__link">
-              <svg class='icon social__icon'>
-                <use xlink:href='img/icons.svg#vk'></use>
-              </svg>
-            </a>
-        </li>
-        <li class="social__item">
-            <a href="#!" class="btn social__link">
-              <svg class='icon social__icon'>
-                <use xlink:href='img/icons.svg#fb'></use>
-              </svg>
-            </a>
-        </li>
-        <li class="social__item">
-            <a href="#!" class="btn social__link">
-              <svg class='icon social__icon'>
-                <use xlink:href='img/icons.svg#in'></use>
-              </svg>
-            </a>
-        </li>
-      </ul> -->
-      <nav>
-        <ul class="header-nav">
-          <li class="header-nav__item">
-            <a class="header-nav__link mr30" href="tel:+375445157324">+375 44 515-73-24</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#who" class="header-nav__link">О нас</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#gallery" class="header-nav__link">Галерея</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#objects" class="header-nav__link">Объекты</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#contacts" class="header-nav__link">Контакты</a>
-          </li>
-          <li class="header-nav__item">
-            <ul class="social">
-              <li class="social__item">
-                  <a href="#!" class="btn social__link">
-                    <svg class='icon social__icon'>
-                      <use xlink:href='img/icons.svg#vk'></use>
-                    </svg>
-                  </a>
-              </li>
-              <li class="social__item">
-                  <a href="#!" class="btn social__link">
-                    <svg class='icon social__icon'>
-                      <use xlink:href='img/icons.svg#fb'></use>
-                    </svg>
-                  </a>
-              </li>
-              <li class="social__item">
-                  <a href="#!" class="btn social__link">
-                    <svg class='icon social__icon'>
-                      <use xlink:href='img/icons.svg#in'></use>
-                    </svg>
-                  </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <!-- <div class="header__top-line">
+        
+        
+      </div> -->
+      <div class="header__bottom-line">
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a class="header-nav__link fwb" href="tel:+375445157324">+375 44 515-73-24</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#who" class="header-nav__link">О нас</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#gallery" class="header-nav__link">Галерея</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#objects" class="header-nav__link">Объекты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#contacts" class="header-nav__link">Контакты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#!" class="btn btn--black btn--small header__try-btn">Пробное занятие</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
     </div>
     <div class="logo logo--header">
       <a href="/"><img class="logo__icon" src="img/sprites/svg/logo.svg" alt="" /></a>
@@ -102,54 +61,55 @@
 </header>
     <div id="body">
       <div class="banner3">
-  <div class="banner3__col banner3__col--mma">
-      <div class="banner3__inner-wrap">
-        <div class="banner3__background"></div>
-        <p class="banner3__title"><span>MMA</span></p>
-        <div class="banner3__description">
-          <div class="banner3__description-inner">
-            Смешанные единоборства для детей – это универсальное сочетание лучших и практичных техник из различных видов боевых искусств (самбо, бокс, карате, бразильское джиу-джитсу и пр.)
+  <div class="banner3__cols">
+    <div class="banner3__col banner3__col--mma">
+        <div class="banner3__inner-wrap">
+          <div class="banner3__background"></div>
+          <p class="banner3__title"><span>MMA</span></p>
+          <div class="banner3__description">
+            <div class="banner3__description-inner">
+              Смешанные единоборства для детей – это универсальное сочетание лучших и практичных техник из различных видов боевых искусств (самбо, бокс, карате, бразильское джиу-джитсу и пр.)
+            </div>
+          </div>
+          <div class="banner3__footer">
+            <button class="btn btn--orange-fill" data-section="mma">Узнать больше</button>
           </div>
         </div>
-        <div class="banner3__footer">
-          <button class="btn btn--orange-fill" data-section="mma">Узнать больше</button>
-        </div>
-      </div>
-  </div>
-  <div class="banner3__col banner3__col--karate">
-      <div class="banner3__inner-wrap">
-        <div class="banner3__background"></div>
-        <p class="banner3__title"><span>КАРАТЕ</span></p>
-        <div class="banner3__description">
-          <div class="banner3__description-inner">
-            Карате (с яп. «Пустая рука») – японское боевое искусство, система защиты и нападения. 
-            Современное карате – это красивый и динамичный вид спорта, который прекрасно подходит мальчикам и девочкам. 
-
+    </div>
+    <div class="banner3__col banner3__col--karate">
+        <div class="banner3__inner-wrap">
+          <div class="banner3__background"></div>
+          <p class="banner3__title"><span>КАРАТЕ</span></p>
+          <div class="banner3__description">
+            <div class="banner3__description-inner">
+              Карате (с яп. «Пустая рука») – японское боевое искусство, система защиты и нападения. 
+              Современное карате – это красивый и динамичный вид спорта, который прекрасно подходит мальчикам и девочкам. 
+    
+            </div>
+          </div>
+          <div class="banner3__footer">
+            <button class="btn btn--orange-fill" data-section="karate">Узнать больше</button>
           </div>
         </div>
-        <div class="banner3__footer">
-          <button class="btn btn--orange-fill" data-section="karate">Узнать больше</button>
-        </div>
-      </div>
-  </div>
-  <div class="banner3__col banner3__col--gym">
-      <div class="banner3__inner-wrap">
-        <div class="banner3__background"></div>
-        <p class="banner3__title"><span>Гимнастика</span></p>
-        <div class="banner3__description">
-          <div class="banner3__description-inner">
-            Гимнастика – это комплекс упражнений, которые развивают 5 физических возможностей ребенка: силу, выносливость, скорость, координацию и гибкость.
+    </div>
+    <div class="banner3__col banner3__col--gym">
+        <div class="banner3__inner-wrap">
+          <div class="banner3__background"></div>
+          <p class="banner3__title"><span>Гимнастика</span></p>
+          <div class="banner3__description">
+            <div class="banner3__description-inner">
+              Гимнастика – это комплекс упражнений, которые развивают 5 физических возможностей ребенка: силу, выносливость, скорость, координацию и гибкость.
+            </div>
+          </div>
+          <div class="banner3__footer">
+            <button class="btn btn--orange-fill" data-section="gym">Узнать больше</button>
           </div>
         </div>
-        <div class="banner3__footer">
-          <button class="btn btn--orange-fill" data-section="gym">Узнать больше</button>
-        </div>
-      </div>
+    </div>
   </div>
 </div>
       
       <section id="who" class="banner-block" style="background-image: url(img/clients_parallax.jpg);background-position: center center;">
-      <!-- <section id="who" class="banner-block" style="background-color: #ccc"> -->
         <div class="banner-block__body">
           <div class="inner">
             <div class="banner-block__tiles clearfix">
@@ -212,13 +172,6 @@
                 </ul>
               </div>
             </div>
-            <div class="banner-block__tiles mt0 clearfix">
-              <div class="banner-block__tile banner-block__tile--yellow banner-block__tile--full banner-block__tile--heightAuto">
-                <div class="banner-block__tile-title">Где?</div>
-                   
-              </div>
-              
-            </div>
           </div>
         </div>
       </section>
@@ -237,7 +190,6 @@
                 <div class="banner-block__tile-title">Что?</div>
                 ММА для детей – это, пожалуй, лучшее направление из всех видов единоборств и систем физического развития на сегодняшний день!
                 <br />      
-
               </div>
               <div class="banner-block__tile banner-block__tile--white banner-block__tile--right">
                 <div class="banner-block__tile-title">Почему?</div>
@@ -253,6 +205,13 @@
                   </li>
                 </ul>
               </div>
+              <!-- <div class="clear"></div>
+              <div class="banner-block__tile banner-block__tile--yellow banner-block__tile--full mt0">
+                <div class="banner-block__tile-title">Где?</div>
+                123
+                <br />      
+              </div> -->
+
             </div>
           </div>
         </div>
@@ -349,6 +308,7 @@
       
     </div>
 
+    <p class="more-in-soc">В соцсетях больше!...</p>
   </div>
 </div>
       </section>
@@ -357,6 +317,34 @@
         <div class="banner-block__title">
           <div class="inner">
             <h2>Объекты</h2>
+            <div class="objects">
+  <div class="objects-list objects-list--mma">
+    <p class="objects-list__title"><span>MMA</span></p>
+    <ul class="ul objects-list__ul">
+      <li>Долгобродская, 43</li>
+      <li>СШ №219</li>
+    </ul>
+  </div>
+  <div class="objects-list objects-list--karate">
+    <p class="objects-list__title"><span>Карате</span></p>
+    <ul class="ul objects-list__ul">
+      <li>Долгобродская, 43</li>
+      <li>СШ №219</li>
+      <li>СШ №161</li>
+      <li>СШ №199</li>
+    </ul>
+  </div>
+  <div class="objects-list objects-list--gym">
+    <p class="objects-list__title"><span>Гимнастика</span></p>
+    <ul class="ul objects-list__ul">
+      <li>Долгобродская, 43</li>
+      <li>СШ №219</li>
+    </ul>
+  </div>
+</div>
+<div class="objectsMap">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OKJ7T_10Q0gsCZehxV702nDGlnTqHXHh&amp;width=100%&amp;height=707&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+</div>
           </div>
         </div>
       </section>
@@ -364,7 +352,45 @@
       <section id="contacts">
         <div class="banner-block__title">
           <div class="inner">
-            <h2>Контакты</h2>
+            <h2>Свяжитесь с нами</h2>
+            <div class="contacts">
+  <p class="contacts__title">Контакты</p>
+
+  <div class="contacts__text">
+    <b>Телефон:</b> <a href="tel:+375445157324">+375-44-515-73-24</a> <br />
+    <span style="opacity:0;">Телефон:</span> <a href="tel:+375293271718">+375-29-327-17-18</a> <br />
+    <b>Email:</b> <a href="mailto:lionsbel2016@gmail.com">lionsbel2016@gmail.com</a> <br />
+    <b>Viber:</b> +375-44-515-73-24 <br />
+    <ul class="social">
+      <li class="social__item">
+          <a href="#!" class="btn social__link">
+            <svg class='icon social__icon'>
+              <use xlink:href='img/icons.svg#vk'></use>
+            </svg>
+          </a>
+      </li>
+      <li class="social__item">
+          <a href="#!" class="btn social__link">
+            <svg class='icon social__icon'>
+              <use xlink:href='img/icons.svg#fb'></use>
+            </svg>
+          </a>
+      </li>
+      <li class="social__item">
+          <a href="#!" class="btn social__link">
+            <svg class='icon social__icon'>
+              <use xlink:href='img/icons.svg#in'></use>
+            </svg>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <p class="contacts__title">Адрес</p>
+  <div class="contacts__text">
+    <b>Адрес:</b> 220070, г. Минск, ул. Долгобродская, 43 <br />
+    МСОО "Лайэнз", рег. №11111
+  </div>
+</div>
           </div>
         </div>
       </section>
@@ -372,11 +398,19 @@
     </div>
   </div>
   <footer class="footer">
-  footer
+  <p class="footer__title">Lions</p>
+  <div class="inner">
+    Copyright © All Rights Reserved <br />
+    и <br />
+    куча <br />
+    другой <br />
+    инфы
+    </div>
 </footer>
 
   <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-2.2.2.min.js"><\/script>')</script>
+<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 </body>
