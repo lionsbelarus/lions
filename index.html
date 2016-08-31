@@ -8,11 +8,10 @@
 <meta charset="UTF-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <meta name="theme-color" content="#5D9F74"> -->
+<meta name="theme-color" content="#EFB944">
 
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&subset=cyrillic" rel="stylesheet">
-<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
 <link rel="stylesheet" href="css/vendor.css" />
 <link rel="stylesheet" href="css/styles.css" />
   <title></title>
@@ -22,41 +21,67 @@
     <div class="header-placeholder"></div>
 <header class="header"> 
   <div class="inner clearfix">
+    <button class="header__hamburger">☰</button>
+    <div class="logo logo--header">
+      <a href="/"><img class="logo__icon" src="img/sprites/svg/logo.svg" alt="" /></a>
+    </div>
     <div class="header__info">
       <!-- <div class="header__top-line">
         
         
       </div> -->
-      <div class="header__bottom-line">
-        <nav>
-          <ul class="header-nav">
-            <li class="header-nav__item">
-              <a class="header-nav__link fwb" href="tel:+375445157324">+375 44 515-73-24</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#who" class="header-nav__link">О нас</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#gallery" class="header-nav__link">Галерея</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#objects" class="header-nav__link">Объекты</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#contacts" class="header-nav__link">Контакты</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#!" class="btn btn--black btn--small header__try-btn">Пробное занятие</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <!-- <div class="header__bottom-line">
+        
+      </div> -->
+      <nav>
+        <ul class="header-nav">
+          <li class="header-nav__item">
+            <a class="header-nav__link fwb" href="tel:+375445157324">+375 44 515-73-24</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#who" class="header-nav__link">О нас</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#gallery" class="header-nav__link">Галерея</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#objects" class="header-nav__link">Объекты</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#contacts" class="header-nav__link">Контакты</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#!" class="btn btn--black btn--small header__try-btn">Пробное занятие</a>
+          </li>
+        </ul>
+      </nav>
       
     </div>
-    <div class="logo logo--header">
-      <a href="/"><img class="logo__icon" src="img/sprites/svg/logo.svg" alt="" /></a>
-    </div>
+    
 
+  </div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">×</button>
+    <ul class="mobile-menu__ul">
+      <li class="mobile-menu__li">
+          <a href="#who" class="mobile-menu__link">О нас</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#gallery" class="mobile-menu__link">Галерея</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#objects" class="mobile-menu__link">Объекты</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#contacts" class="mobile-menu__link">Контакты</a>
+      </li>
+      <li class="mobile-menu__li mt50">
+          <a class="mobile-menu__link" href="tel:+375445157324">+375 44 515-73-24</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#!" class="btn btn--white header__try-btn">Пробное занятие</a>
+      </li>
+    </ul>
   </div>
 </header>
     <div id="body">
@@ -108,7 +133,7 @@
     </div>
   </div>
 </div>
-      
+
       <section id="who" class="banner-block" style="background-image: url(img/clients_parallax.jpg);background-position: center center;">
         <div class="banner-block__body">
           <div class="inner">
@@ -139,7 +164,6 @@
           </div>
         </div>
       </section>
-
 
       <section id="mma" class="banner-block" style="background-image: url(img/bannerBlock_mma.jpg);">
         <div class="banner-block__title">
@@ -251,7 +275,7 @@
           </div>
         </div>
       </section>
-
+      
       <section id="gallery">
         <div class="banner-block__title">
           <div class="inner">
@@ -312,7 +336,7 @@
   </div>
 </div>
       </section>
-
+      
       <section id="objects">
         <div class="banner-block__title">
           <div class="inner">
@@ -394,7 +418,7 @@
           </div>
         </div>
       </section>
-
+      
     </div>
   </div>
   <footer class="footer">
@@ -408,9 +432,8 @@
     </div>
 </footer>
 
-  <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-2.2.2.min.js"><\/script>')</script>
-<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-3.1.0.min.js"><\/script>')</script>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 </body>
