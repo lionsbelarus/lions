@@ -1,0 +1,57 @@
+/*default styles*/
+.form-line {
+  margin-bottom: 15px;
+}
+/* input, button, select, textarea are border-box by default from _custom_normalize.css */
+.input {
+  border: 1px solid #000;
+  line-height: 38px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
+
+  box-sizing: border-box;
+}
+
+.input:hover, .input:focus {
+
+}
+.input[disabled], .input:disabled {
+
+}
+.input[readonly] {
+
+}
+.input::placeholder, textarea::placeholder {
+  
+}
+.select {
+  border: 1px solid #000;
+  line-height: 38px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
+
+  box-sizing: border-box;
+}
+
+textarea {
+  padding:4px;
+  
+}
+
+
+
+/*from sanitize*/
+/*select{-moz-appearance:none;-webkit-appearance:none}
+select::-ms-expand{display:none}
+select::-ms-value{color:currentColor}*/
+
+.valid {
+    
+}
+.invalid {
+    
+}

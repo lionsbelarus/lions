@@ -1,0 +1,14 @@
+.contacts {
+
+
+  &__title {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  &__text {
+    line-height: 1.6;
+  }
+}

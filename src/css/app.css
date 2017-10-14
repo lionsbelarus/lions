@@ -1,0 +1,41 @@
+/* default paths from where css can be imported you can see in gulpfile.js in css:common task */
+
+/* import here all vendor styles */
+/* @import 'vendor\jquery.bxslider.css'; */
+/* @import 'vendor\lightbox.css'; */
+
+/* import here all default/reset styles */
+@import 'normalize-css'; /*this css imported from node_modules*/
+
+/*next css files imported from css/common*/
+@import 'common/_custom_normalize.css';
+@import 'common/_variables.css';
+
+/* import project specific css */
+@import 'common/buttons.css';
+@import 'common/forms.css';
+@import 'common/plugins.css';/*in plugins we write our custom styles for vendor plugins*/
+
+/* import global site styles, common for all pages */
+@import 'common/global.css';
+
+
+
+
+
+/* import all css from components here */
+@import 'components/header2/header2.css';
+@import 'components/footer/footer.css';
+@import 'components/banner3/banner3.css';
+@import 'components/gallery/gallery.css';
+@import 'components/objects/objects.css';
+@import 'components/contacts/contacts.css';
+@import 'components/banner-mobile/banner-mobile.css';
+
+/* @import 'components\index.css'; */
+
+
+
+
+/* import styles from backend developers */
+@import 'backend.css';

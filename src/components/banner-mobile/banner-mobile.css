@@ -1,0 +1,38 @@
+.banner-mobile-wrap {
+  max-width: 580px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 0 rgba(255,255,255,.5);
+
+  @media (--980) {
+    display: none;
+  }
+}
+.banner-mobile {
+  margin: 20px;
+  padding: 20px;
+  font-size: 16px;
+
+  &__title {
+    text-align: center;
+    font-size: 20px;
+
+    & span {
+      font-size: 30px;
+      font-weight: bold;
+      display: block;
+    }
+  }
+
+  animation: 10s linear 0s infinite alternate bannerMobile;
+}
+@keyframes bannerMobile {
+  0% {
+    background-color: color(var(--color-orange-light) alpha(-40%));
+  }
+  50% {
+    background-color: color(var(--color-orange-dark) alpha(-30%));
+  }
+  100% {
+    background-color: color(var(--color-orange) alpha(-20%));
+  }
+}

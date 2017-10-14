@@ -1,0 +1,88 @@
+.objects {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+  overflow: hidden;
+
+  &__list {
+    list-style-position:inside;
+    list-style-type: decimal;
+    margin-bottom: 40px;
+    font-size: 16px;
+
+    & >li {
+      margin-bottom: 15px;
+    }
+  }
+
+  &-list {
+    font-size: 16px;
+    /* text-align: center; */
+    margin-bottom: 20px;
+
+    @media (--768) {
+      width:33.33%;
+      float: left;
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    & .objects-list__title {
+      font-size: 30px;
+      /* text-shadow: 0 0 3px #000; */
+      margin-bottom: 15px;
+      text-align: center;
+      
+      @media (--768) {
+        text-align: left;
+      }
+
+      & span {
+        display: inline-block;
+        padding:  0 10px;
+        background-color: var(--color-orange);
+      }
+    }
+
+    /* &--mma {
+      & .objects-list__title {
+        & span {
+          background-color: color(var(--color-orange-dark) alpha(-30%));
+        }
+      }
+    }
+
+    &--karate {
+      & .objects-list__title {
+        & span {
+          background-color: color(var(--color-orange-light) alpha(-30%));
+        }
+      }
+    }
+
+    &--gym {
+      & .objects-list__title {
+        & span {
+          background-color: color(var(--color-orange) alpha(-30%));
+        }
+      }
+    } */
+  }
+}
+
+.objectsMap {
+  height: 300px;
+  clear: both;
+
+  & > ymaps {
+    height: 300px !important;
+  }
+
+  @media (--768) {
+    height: 707px;
+
+    & > ymaps {
+      height: 707px !important;
+    }
+  }
+}

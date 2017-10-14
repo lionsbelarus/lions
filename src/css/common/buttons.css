@@ -1,0 +1,126 @@
+.btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  display: inline-block;
+  text-decoration: none;
+  /* line-height: 46px; */
+  /* height: 48px; */
+  line-height: 38px;
+  height: 40px;;
+  appearance: none;
+  background: transparent;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 18px;
+  text-transform: uppercase;
+  
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  transition:200ms;
+  color:#000;
+  vertical-align: bottom;
+  position: relative;z-index: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none !important;
+
+  &:before {
+    content:'';
+    width:101%;
+    height:100%;
+    position: absolute;left: -101%;top: 0;z-index: -1;
+    background-color: transparent;
+    transition:250ms;
+    will-change:transform;
+  }
+  &:hover,&:focus,&:active {
+    color: #000;
+
+    &:before {
+      transform: translateX(100%);
+    }
+  }
+
+  &--small {
+    height: 30px;
+    line-height: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  &--block {
+    display: block;
+    width:100%;
+  }
+  
+  &--black {
+    border-color: #000;
+
+    &:hover,&:focus,&:active {
+      color: #fff;
+    }
+
+    &:before {
+      background-color: #000;
+    }
+  }
+
+  &--black-fill {
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+
+    &:hover,&:focus,&:active {
+      color: #000;
+    }
+
+    &:before {
+      /* background-color: var(--color-orange); */
+      background-color: #fff;
+    }
+  }
+
+  &--white {
+    border-color: #fff;
+    color:#fff;
+
+    &:hover,&:focus,&:active {
+      color: #000;
+    }
+
+    &:before {
+      background-color: #fff;
+    }
+  }
+
+  &--orange {
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+
+    &:hover,&:focus,&:active {
+      color: #fff;
+    }
+
+    &:before {
+      background-color: var(--color-orange);
+    }
+  }
+
+  &--orange-fill {
+    border-color: #fff;
+    color: #fff;
+    background-color: rgba(253,193,0,.70);
+
+    &:hover,&:focus,&:active {
+      color: #000;
+    }
+
+    &:before {
+      /* background-color: var(--color-orange); */
+      background-color: #fff;
+    }
+  }
+
+}

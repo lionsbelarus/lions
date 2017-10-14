@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+  <!--[if IE]>
+  <meta http-equiv="refresh" content="0;url=http://browsehappy.com">
+<![endif]-->
+
+<meta charset="UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#EFB944">
+
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/styles.css" />
+  <title>Клуб Lions</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="header-placeholder"></div>
+<header class="header"> 
+  <div class="inner clearfix">
+    <button class="header__hamburger">☰</button>
+    <div class="logo logo--header">
+      <a href="/"><img class="logo__icon" src="img/sprites/svg/logo.svg" alt="" /></a>
+    </div>
+    <div class="header__info">
+      <!-- <div class="header__top-line">
+        
+        
+      </div> -->
+      <!-- <div class="header__bottom-line">
+        
+      </div> -->
+      <nav>
+        <ul class="header-nav">
+          <li class="header-nav__item">
+            <a class="header-nav__link fwb phone" href="tel:+375445157324">+375 44 515-73-24</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#who" class="header-nav__link">О нас</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#gallery" class="header-nav__link">Галерея</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#objects" class="header-nav__link">Объекты</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#contacts" class="header-nav__link">Контакты</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#!" class="btn btn--black btn--small header__try-btn">Пробное занятие</a>
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+
+  </div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">×</button>
+    <ul class="mobile-menu__ul">
+      <li class="mobile-menu__li">
+          <a href="#who" class="mobile-menu__link">О нас</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#gallery" class="mobile-menu__link">Галерея</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#objects" class="mobile-menu__link">Объекты</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#contacts" class="mobile-menu__link">Контакты</a>
+      </li>
+      <li class="mobile-menu__li mt50">
+          <a class="mobile-menu__link phone" href="tel:+375445157324">+375 44 515-73-24</a>
+      </li>
+      <li class="mobile-menu__li">
+          <a href="#!" class="btn btn--white header__try-btn">Пробное занятие</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<div class="dn">
+  
+    <div class="try-popup mfp-with-anim">
+      <p class="try-popup__title">Первое пробное занятие</p>
+      <div class="form-line">
+        <label class="try-popup__label" for="try-age">Выберите возраст ребенка:</label> <br />
+        <select class="select" id="try-age">
+          <option >4 - 5 лет</option>
+          <option >6 -7 лет</option>
+          <option >8 - 9 лет</option>
+          <option ">10 -12 лет</option>
+          <option ">13 - 15 лет</option>
+        </select>
+      </div>
+      <div class="form-line">
+        <label class="try-popup__label" for="try-type">Выберите вид борьбы:</label> <br />
+        <select class="select" id="try-type">
+          <option value="mma">ММА</option>
+          <option value="karate">Карате</option>
+          <option value="gym">Гимнастика</option>
+        </select>
+      </div>
+      <div class="form-line">
+        <label class="try-popup__label" for="try-address">Выберите удобный для Вас адрес занятий:</label> <br />
+        <select class="select" id="try-address">
+          <option >Долгобродская, 43</option>
+          <option >СШ №219</option>
+          <option >СШ №161</option>
+          <option >СШ №199</option>
+        </select>
+      </div>
+      <div class="form-line">
+        <label class="try-popup__label" for="try-tel">Введите Ваш номер телефона:</label> <br />
+        <input type="tel" id="try-tel" class="input" placeholder="+375 44 5157324" />
+      </div>
+      <div class="form-line">
+        <button class="btn btn--orange-fill btn--block try-popup__submit">Записаться</button>
+      </div>
+    </div>
+  
+</div>
+<a href="#wrapper" class="go-top">
+  <!-- <img src="/img/arrow.svg" alt="" /> -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+  <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+  <g><path fill="#EFB944" d="M500,656.1l-251-251l40.8-40.8L500,574.5l210.2-210.2l40.8,40.8L500,656.1L500,656.1z M10,500C10,229.8,229.8,10,500,10c270.2,0,490,219.8,490,490c0,270.2-219.8,490-490,490C229.8,990,10,770.2,10,500L10,500z M67.6,500c0,238.4,193.9,432.4,432.4,432.4c238.4,0,432.4-193.9,432.4-432.4c0-238.4-193.9-432.4-432.4-432.4S67.6,261.6,67.6,500L67.6,500z"/></g>
+  </svg>
+</a>
+    <div id="body">
+      <div class="banner-mobile-wrap">
+  <div class="banner-mobile">
+    <h1 class="banner-mobile__title">Спортивный клуб <span>«Lions»</span></h1>
+    На сегодняшний день мы активно развиваем 3 основных направления:
+    <ul class="ul--styled-black mt15">
+      <li>смешанные единоборства (ММА) для детей (от 6 лет)</li>
+      <li>карате-до (дебютант Олимпийских игр в Токио в 2020 году);</li>
+      <li>гимнастика (от 4-х до 8 лет)</li>
+    </ul>
+  </div>
+</div>
+    
+      <div class="banner3">
+  <div class="banner3__cols">
+    <div class="banner3__col banner3__col--mma">
+        <div class="banner3__inner-wrap">
+          <div class="banner3__background"></div>
+          <p class="banner3__title"><span>MMA</span></p>
+          <div class="banner3__description">
+            <div class="banner3__description-inner">
+              ММА для детей – это, пожалуй, лучшее направление из всех видов единоборств и систем физического развития на сегодняшний день! <br />
+              Включает в себя самые необходимые техники из карате, самбо, бокса и др. видов боевых искусств.
+            </div>
+          </div>
+          <div class="banner3__footer">
+            <a href="#mma" class="btn btn--orange-fill banner3__link" data-section="mma">Узнать больше</a>
+          </div>
+        </div>
+    </div>
+    <div class="banner3__col banner3__col--karate">
+        <div class="banner3__inner-wrap">
+          <div class="banner3__background"></div>
+          <p class="banner3__title"><span>КАРАТЕ</span></p>
+          <div class="banner3__description">
+            <div class="banner3__description-inner">
+              Карате – японское боевое искусство, система защиты и нападения. 
+              Современное карате – это красивый и динамичный вид спорта, который прекрасно подходит мальчикам и девочкам. 
+    
+            </div>
+          </div>
+          <div class="banner3__footer">
+            <a href="#karate" class="btn btn--orange-fill banner3__link" data-section="karate">Узнать больше</a>
+          </div>
+        </div>
+    </div>
+    <div class="banner3__col banner3__col--gym">
+        <div class="banner3__inner-wrap">
+          <div class="banner3__background"></div>
+          <p class="banner3__title"><span>Гимнастика</span></p>
+          <div class="banner3__description">
+            <div class="banner3__description-inner">
+              Оздоровительная гимнастика - это комплексы упражнений, которые развивают 5 физических возможностей ребенка: силу, выносливость, скорость, координацию и гибкость.
+            </div>
+          </div>
+          <div class="banner3__footer">
+            <a href="#gym" class="btn btn--orange-fill banner3__link" data-section="gym">Узнать больше</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+      <section id="who" class="banner-block" style="min-height:1020px;background-image: url(img/clients_parallax.jpg);background-position: center center;">
+        <div class="banner-block__body">
+          <div class="inner">
+            <div class="banner-block__tiles clearfix">
+              <div class="banner-block__tile banner-block__tile--orange banner-block__tile--full who">
+                <div class="banner-block__tile-title who__title">О нас</div>
+                <p>
+                 «Lions» - это детский спортивный клуб. Мы занимаемся как профессиональным спортом, так и спортом с целью оздоровления. <br /><br />
+                 На сегодняшний день мы активно развиваем 3 основных направления:
+                  <ul class="">
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      смешанные единоборства (ММА) для детей (от 5 лет)
+                    </li>
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      карате-до (от 5 лет) - дебютант Олимпийских игр в Токио в 2020 году
+                    </li>
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      гимнастика (от 4 до 8 лет)
+                    </li>
+                  </ul>
+                </p>
+                
+                <div class="banner-block__tile-title who__title">Наши цели</div>
+                <ul>
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      развивать детей физически, улучшая их здоровье
+                    </li>
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      формировать характер, воспитывая упорство, трудолюбие и целеустремленность
+                    </li>
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      формировать с раннего возраста привычки здорового и активного образа жизни
+                    </li>
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      создавать все условия для развития каждого ребенка, а также командного духа
+                    </li>
+                    <li>
+                      <svg class='icon ul__mark'>
+                        <use xlink:href='img/icons.svg#l'></use>
+                      </svg>
+                      развивать детский спорт в Беларуси в области боевых искусств и гимнастики
+                    </li>
+                </ul>
+                
+                <div class="banner-block__tile-title who__title">Тренеры</div>
+                <p>
+                  В нашем клубе работают первоклассные тренеры с большим опытом работы с детьми.
+                </p>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mma" class="banner-block" style="background-image: url(img/bannerBlock_mma.jpg);">
+        <div class="banner-block__title">
+          <div class="inner">
+            <h2>MMA kids</h2>
+            <p>(смешанные единоборства для детей)</p>
+          </div>
+        </div>
+        <div class="banner-block__body">
+          <div class="inner">
+            <div class="banner-block__tiles clearfix">
+              <div class="banner-block__tile banner-block__tile--white banner-block__tile--left">
+                <div class="banner-block__tile-title">Что это?</div>
+                ММА для детей – это, пожалуй, лучшее направление из всех видов единоборств и систем физического развития на сегодняшний день!
+                <br /><br />
+                Включает в себя самые необходимые техники из карате, самбо, бокса и др. видов боевых искусств. <br /><br />
+                Мы первый и единственный детский спортивный клуб, который развивает ММА для детей (с 5-летнего возраста) в Республике Беларусь. <br /><br />
+                В настоящее время MMA kids имеет огромную популярность с США и странах Европы, и уже сегодня, благодаря нашему клубу, ваш ребёнок может попробовать это направление одним из первых в Беларуси.
+
+
+              </div>
+              <div class="banner-block__tile banner-block__tile--orange banner-block__tile--right">
+                <div class="tac mb30 banner-block__tile-title">Преимущества</div>
+                <ul class="ul--styled">
+                  <li>
+                    Смешанные единоборства обеспечивают комплексное физическое развитие ребенка (это навыки эффективной техники борьбы, развитие силы, скорости и выносливости)
+                  </li>
+                  <li>
+                    Это возможность познакомиться с разными направлениями боевых искусств и взять самое лучшее из каждого из них
+                  </li>
+                  <li>
+                    Занятия проводятся на специальном покрытии, которое обеспечивает комфорт и безопасность вашего ребенка
+                  </li>
+                  <li>
+                    Наши профессиональные и опытные тренеры найдут подход к каждому ребенку!
+                  </li>
+                  <li>
+                    ММА – это качественное улучшение здоровья за счет грамотной тренировки мышечной, сердечно-сосудистой и нервной систем
+                  </li>
+                  <li>
+                    Такие тренировки формируют характер, воспитывая упорство, трудолюбие и целеустремленность
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="karate" class="banner-block" style="background-image: url(img/bannerBlock_karate.jpg);">
+        <div class="banner-block__title">
+          <div class="inner">
+            <h2>Карате</h2>
+            <!-- <p>(с яп. «Пустая рука») </p> -->
+          </div>
+        </div>
+        <div class="banner-block__body">
+          <div class="inner">
+            <div class="banner-block__tiles clearfix">
+              <div class="banner-block__tile banner-block__tile--orange banner-block__tile--left">
+                <div class="banner-block__tile-title">Что это?</div>
+                Карате  – японское боевое искусство, система защиты и нападения. Во всем мире этим боевым искусством занимается более 200 млн человек. С 2020 года карате - олимпийский вид спорта. <br /><br />
+                Карате для детей прежде всего является отличной системой психофизической подготовки и направляет в нужное русло бьющую через край детскую энергию. Современное карате – это красивый и динамичный вид спорта, который прекрасно подходит мальчикам и девочкам. 
+                <br /><br />
+                На тренировках ребята изучают ударную и бросковую технику, а также множество различных комплексов физических упражнений для укрепления мышц и связок, для развития скорости и координации, улучшения гибкости.
+                <br /><br />
+                Наши ученики являются победителями и призерами многих соревнований по карате как в Беларуси, так и за ее пределами (Словакия, Латвия, Польша и др.).
+              </div>
+              <div class="banner-block__tile banner-block__tile--white banner-block__tile--right">
+                <div class="banner-block__tile-title">Преимущества</div>
+                <ul class="ul--styled ul--styled-black">
+                  <li>
+                    Карате способствует физическому и духовному развитию ребенка, учит его не только силовым приемам, но и правильным жизненным установкам, уверенности в себе, умению работать в команде
+                  </li>
+                  <li>
+                    Наши тренеры – профессионалы высокого уровня с большим опытом преподавания карате детям
+                  </li>
+                  <li>
+                    Занятия проводятся на специальном покрытии, которое обеспечивает комфорт и безопасность вашего ребенка
+                  </li>
+                  <li>
+                    Грамотная тренировка мышечной, сердечно-сосудистой и нервной систем положительно скажется на здоровье ребенка
+                  </li>
+                  <li>
+                    Активные занятия карате – это шанс попасть на Олимпийские игры в составе сборной команды нашей страны!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gym" class="banner-block" style="background-image: url(img/bannerBlock_gym.jpg);">
+        <div class="banner-block__title">
+          <div class="inner">
+            <h2>Гимнастика </h2>
+            <!-- <p>тут тоже что-то надо написать </p> -->
+          </div>
+        </div>
+        <div class="banner-block__body">
+          <div class="inner">
+            <div class="banner-block__tiles clearfix">
+              <div class="banner-block__tile banner-block__tile--white banner-block__tile--left">
+                <div class="banner-block__tile-title">Что это?</div>
+                Наш клуб развивает направление оздоровительной гимнастики.
+                <br /> <br />
+                Оздоровительная гимнастика - это комплексы упражнений, которые развивают 5 физических возможностей ребенка: силу, выносливость, скорость, координацию и гибкость.
+                <br /><br />
+                Такая гимнастика необходима ребенку для укрепления здоровья, гармоничного физического развития и физического совершенствования.
+                <br /><br />
+                Также важное значение для каждого ребенка имеет тот факт, что гимнастика, которая преподается в нашем клубе, является технической основой многих видов спорта.
+              </div>
+              <div class="banner-block__tile banner-block__tile--orange banner-block__tile--right">
+                <div class="banner-block__tile-title">Преимущества</div>
+                <ul class="ul--styled">
+                  <li>
+                    Оздоровительная гимнастика – это здоровье и всестороннее физическое развитие вашего ребенка
+                  </li>
+                  <li>
+                    Занятия проводятся на специальном покрытии, которое обеспечивает комфорт и безопасность вашего ребенка
+                  </li>
+                  <li>
+                    Наша гимнастика прекрасно подойдет и для мальчиков, и для девочек
+                  </li>
+                  <li>
+                    В процессе обучения формируется отличная база для последующих занятий любым другим видом спорта – ваш ребенок будет готов!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="gallery">
+        <div class="banner-block__title">
+          <div class="inner">
+            <h2>Галерея</h2>
+          </div>
+        </div>
+        <div class="gallery" data-featherlight-gallery
+  data-featherlight-filter="a">
+  <div class="inner">
+    <div class="gallery__item">
+      <a href="img/gallery/1.jpg" class="gallery__image" style="background-image: url(img/gallery/1.jpg);"></a>
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/2.jpg" class="gallery__image" style="background-image: url(img/gallery/2.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/3.jpg" class="gallery__image" style="background-image: url(img/gallery/3.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/4.jpg" class="gallery__image" style="background-image: url(img/gallery/4.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/5.jpg" class="gallery__image" style="background-image: url(img/gallery/5.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/6.jpg" class="gallery__image" style="background-image: url(img/gallery/6.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/7.jpg" class="gallery__image" style="background-image: url(img/gallery/7.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/8.jpg" class="gallery__image" style="background-image: url(img/gallery/8.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/9.jpg" class="gallery__image" style="background-image: url(img/gallery/9.jpg);"></a>
+    </div>
+    <!-- <div class="gallery__item">
+      <a href="img/gallery/10.jpg" class="gallery__image" style="background-image: url(img/gallery/10.jpg);"></a>
+      
+    </div> -->
+    <div class="gallery__item">
+      <a href="img/gallery/11.jpg" class="gallery__image" style="background-image: url(img/gallery/11.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/12.jpg" class="gallery__image" style="background-image: url(img/gallery/12.jpg);"></a>
+      
+    </div>
+    <div class="gallery__item">
+      <a href="img/gallery/13.jpg" class="gallery__image" style="background-image: url(img/gallery/13.jpg);"></a>
+      
+    </div>
+    <p class="more-in-soc">В соцсетях больше!...</p>
+  </div>
+</div>
+      </section>
+      
+      <section id="objects">
+        <div class="banner-block__title">
+          <div class="inner">
+            <h2>Объекты</h2>
+            <div class="objects">
+  <ol class="ol objects__list">
+    <li>
+      Ул. Долгобродская, 43 <small>(cпециализированный зал для единоборств)</small>
+      <br />
+      <small>Рядом с метро (м.Тракторный завод), большая бесплатная парковка, 1-й этаж</small>
+    </li>
+    <li>
+      Ул. Слободская, 99 (СШ №219) <small>(малый спортивный зал)</small>
+      <br />
+      <small>Рядом с метро (м.Малиновка)</small>
+    </li>
+    <li>
+      Ул. Слободская, 169 (СШ №161) <small>(малый спортивный зал)</small>
+      <br />
+      <small>Рядом с метро (м.Малиновка)</small>
+    </li>
+    <li>
+      Ул. Пимена Панченко, 32 (СШ №199) <small>(зал хореографии)</small>
+    </li>
+  </ol>
+  <div class="objects-list objects-list--mma">
+    <p class="objects-list__title"><span>MMA</span></p>
+    <ul class="ul objects-list__ul">
+      <li>Долгобродская, 43</li>
+    </ul>
+  </div>
+  <div class="objects-list objects-list--karate">
+    <p class="objects-list__title"><span>Карате</span></p>
+    <ul class="ul objects-list__ul">
+      <li>Долгобродская, 43</li>
+      <li>СШ №219</li>
+      <li>СШ №161</li>
+      <li>СШ №199</li>
+    </ul>
+  </div>
+  <div class="objects-list objects-list--gym">
+    <p class="objects-list__title"><span>Гимнастика</span></p>
+    <ul class="ul objects-list__ul">
+      <li>СШ №219</li>
+    </ul>
+  </div>
+</div>
+<div class="objectsMap">
+  <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OKJ7T_10Q0gsCZehxV702nDGlnTqHXHh&amp;width=100%&amp;height=707&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script> -->
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=CaNQEQc_GRGiUpaJq2PlmsEyMX-Tbjcz&amp;width=100%&amp;height=716&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <div class="banner-block__title">
+          <div class="inner">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contacts">
+  <p class="contacts__title">Контакты</p>
+
+  <div class="contacts__text">
+    <b>Телефон:</b> <a href="tel:+375445157324">+375-44-515-73-24</a> <br />
+    <span style="opacity:0;">Телефон:</span> <a href="tel:+375293271718">+375-29-327-17-18</a> <br />
+    <b>Email:</b> <a href="mailto:lionsbel2016@gmail.com">lionsbel2016@gmail.com</a> <br />
+    <b>Viber:</b> +375-44-515-73-24 <br />
+    <ul class="social">
+      <li class="social__item">
+          <a href="https://vk.com/lionskarate" class="btn social__link">
+            <svg class='icon social__icon'>
+              <use xlink:href='img/icons.svg#vk'></use>
+            </svg>
+          </a>
+      </li>
+      <li class="social__item">
+          <a href="https://www.facebook.com/groups/280012555679156/" class="btn social__link">
+            <svg class='icon social__icon'>
+              <use xlink:href='img/icons.svg#fb'></use>
+            </svg>
+          </a>
+      </li>
+      <li class="social__item">
+          <a href="https://www.instagram.com/lions.minsk/" class="btn social__link">
+            <svg class='icon social__icon'>
+              <use xlink:href='img/icons.svg#in'></use>
+            </svg>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <p class="contacts__title">Адрес</p>
+  <div class="contacts__text">
+    <b>Адрес:</b> г. Минск, ул. Долгобродская, 43, пом. 3, 1-й этаж <br />
+    <b>Режим работы:</b> 9.00 – 18.00
+  </div>
+</div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </div>
+  <footer class="footer">
+  <p class="footer__title">Молодежное спортивное общественное объединение «Лайэнз» (МСОО «Лайэнз»)
+</p>
+  <div class="inner">
+    Свидетельство о гос. регистрации №05/1084, выдано главным управлением юстиции Мингорисполкома от 02.07.2015 года.
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-3.1.0.min.js"><\/script>')</script>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
