@@ -2,36 +2,14 @@
 import svg4everybody from 'svg4everybody'
 svg4everybody();
 
-$(function() {
-  Header();
-  Banner();
-});
-
-function Header() {
-  // console.log('header')
-  var $header = $('.header'),
-      $logo = $('.logo');
-
-  checkScroll();
-  $(window).on('scroll orientationchange resize', function (e) {
-    checkScroll();
-  })
-  function checkScroll() {
-    var currentScrollTop = window.pageXOffset || document.documentElement.scrollTop || document.body.scrollTop;
-
-    if(!currentScrollTop) {
-      $header.removeClass('header--fixed')
-    } else {
-      $header.addClass('header--fixed')
-    }
-  }
-}
+import Header from 'header2/header2.js';
+import Footer from 'footer/footer.js';
+import Gallery from 'gallery/gallery.js';
+import Animations from 'animations.js';
 
 
+Header();
+Footer();
+Gallery();
+// Animations();
 
-
-function Banner() {
-  var $banner =$('.banner');
-
-  $banner.addClass('banner--loaded');
-}

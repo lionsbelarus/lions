@@ -1,5 +1,5 @@
-# lions
-lions-club.by website
+# nj-boilerplate
+Simple html5 gulp boilerplate
 
 
 Main commands:

@@ -1,7 +1,6 @@
 export default function Header() {
   
-  var $header = $('.header'),
-      $logo = $('.logo');
+  var $header = $('.header');
 
   checkScroll();
   $(window).on('scroll orientationchange resize', function (e) {
