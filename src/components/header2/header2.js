@@ -98,44 +98,66 @@ export default function Header() {
         selectAddress = $('#try-address'),
         currentType,
         addresses = {
-          "mma": [
+          /* "mma": [
             {
               value:'dlg43',
               title:'Долгобродская, 43'
             },
-          ],
+          ], */
           "karate": [
-            {
-              value:'dlg43',
-              title:'Долгобродская, 43'
-            },
-            {
-              value: 's219',
-              title: 'СШ №219'
-            },
             {
               value: 's161',
               title: 'СШ №161'
             },
             {
+              value: 's219',
+              title: 'СШ №219'
+            },
+            {
               value: 's199',
               title: 'СШ №199'
+            },
+            {
+              value:'s87',
+              title:'СШ №87'
+            },
+            {
+              value:'ds370',
+              title:'Д/с №370'
+            },
+            {
+              value:'ch15',
+              title:'г.Фаниполь (ул.Чапского, 15)'
             }
           ],
           "judo": [
             {
+              value: 's161',
+              title: 'СШ №161'
+            },
+            {
               value: 's219',
               title: 'СШ №219'
+            },
+            {
+              value:'s87',
+              title:'СШ №87'
+            },
+            {
+              value:'ch15',
+              title:'г.Фаниполь (ул.Чапского, 15)'
             }
           ]
         }
 
 
     selectType.on('change', function (e) {
+      console.log('change');
       currentType = selectType.val();
 
       changeOptions(currentType);
     })
+    selectType.val('karate').change();
 
     function changeOptions(type) {
       selectAddress.empty();
@@ -144,7 +166,6 @@ export default function Header() {
         selectAddress.append(`<option>${item.title}</option>`)
       })
     }
-
   }
   try_popup__select();
 
