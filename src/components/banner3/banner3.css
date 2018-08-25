@@ -13,6 +13,9 @@
     @media (--980) {
       /* min-height: 600px; */
       /* height: calc(100vh - 100px); */
+      display: flex;
+      justify-content: space-around;
+      justify-content: space-evenly;
     }
   }
   &__col {
@@ -26,8 +29,8 @@
     box-sizing: border-box;
     
     @media (--980) {
-      width: 33.333%;
-      float: left;
+      /* width: 33.333%;
+      float: left; */
     }
     @media (--1200) {
       /* padding: 50px; */
@@ -62,9 +65,9 @@
         color: #000;
       } */
     }
-    &--gym {
+    &--judo {
       & .banner3__background {
-        background-image: url(../img/banner2_gym.jpg);
+        background-image: url(../img/banner2_judo.jpg);
         background-position: center bottom;
       }
 

@@ -122,7 +122,7 @@ export default function Header() {
               title: 'СШ №199'
             }
           ],
-          "gym": [
+          "judo": [
             {
               value: 's219',
               title: 'СШ №219'
@@ -166,8 +166,8 @@ export default function Header() {
     case 'karate':
       type = 'Карате'
     break;
-    case 'gym':
-      type = 'Гимнастика'
+    case 'judo':
+      type = 'Дзюдо'
     break;
     }
     $.magnificPopup.instance.close();
