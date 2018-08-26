@@ -98,12 +98,24 @@ export default function Header() {
         selectAddress = $('#try-address'),
         currentType,
         addresses = {
-          /* "mma": [
+          "judo": [
             {
-              value:'dlg43',
-              title:'Долгобродская, 43'
+              value: 's161',
+              title: 'СШ №161'
             },
-          ], */
+            {
+              value: 's219',
+              title: 'СШ №219'
+            },
+            {
+              value:'s87',
+              title:'СШ №87'
+            },
+            {
+              value:'ch15',
+              title:'г.Фаниполь (ул.Чапского, 15)'
+            }
+          ],
           "karate": [
             {
               value: 's161',
@@ -130,24 +142,12 @@ export default function Header() {
               title:'г.Фаниполь (ул.Чапского, 15)'
             }
           ],
-          "judo": [
-            {
-              value: 's161',
-              title: 'СШ №161'
-            },
-            {
-              value: 's219',
-              title: 'СШ №219'
-            },
-            {
-              value:'s87',
-              title:'СШ №87'
-            },
+          "gym": [
             {
               value:'ch15',
               title:'г.Фаниполь (ул.Чапского, 15)'
-            }
-          ]
+            },
+          ],
         }
 
 
@@ -181,8 +181,8 @@ export default function Header() {
         phone = $('#try-tel').val();
 
     switch(type) {
-    case 'mma':
-      type = 'ММА'
+    case 'gym':
+      type = 'Гимнастика'
     break;
     case 'karate':
       type = 'Карате'

@@ -21,8 +21,8 @@
     margin-bottom: 20px;
 
     @media (--768) {
-      // width:33.33%;
-      // float: left;
+      width:33.33%;
+      float: left;
       text-align: left;
       margin-bottom: 0;
     }
