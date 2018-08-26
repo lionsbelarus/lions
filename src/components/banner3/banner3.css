@@ -106,20 +106,23 @@
     justify-content: center;
 
     @media (--980) {
-      width:300px;
+      width:400px;
       height:500px;
       margin: 70px auto;
       padding: 20px;
     }
+    @media (min-width: 1280px) {
+      width:500px;
+    }
     @media (--1600) {
-      width:420px;
-      height:420px;
+      width: 500px;
+      height: 500px;
       padding: 50px;
       /* padding: 50px; */
       /* padding-top: 0; */
     }
     @media (--1920) {
-      width:500px;
+      width:800px;
       height:500px;
     }
 
